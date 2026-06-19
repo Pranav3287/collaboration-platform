@@ -7,9 +7,9 @@ function FileUpload({ projectId, canEdit }) {
   const [uploading, setUploading] = useState(false);
   const [imageUrls, setImageUrls] = useState({});
 
-  useEffect(() => {
-    loadFiles();
-  }, [projectId]);
+ useEffect(() => {
+  fetchData(projectId); 
+}, [projectId, fetchData]);
 
   useEffect(() => {
     files.forEach((file) => {
