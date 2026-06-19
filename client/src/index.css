@@ -1,0 +1,22 @@
+body {
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kanban-column {
+  background-color: #e9ecef;
+  min-height: 400px;
+}
+
+.task-card {
+  cursor: grab;
+  transition: transform 0.15s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+.task-card:active {
+  cursor: grabbing;
+}
